@@ -79,13 +79,13 @@ justify-content: center;
 transition: all 0.3s ease-in-out;
 }
 .content .field{
-    margin: 12px 0 5px 0;
+    margin: 12px 0 -5px 0;
     height: 45px;
     border-radius: 4px;
-    padding: 5px;
+    padding:0 5px;
     border: 1px solid #757171;
 }
-.field .active{
+.field.active{
     border-color: #7d2ae8;
 }
 .field i{
@@ -93,7 +93,7 @@ transition: all 0.3s ease-in-out;
     font-size: 18px;
     text-align: center;
 }
-.field .active i{
+.field.active i{
     color: #7d2ae8;
 }
 .field input {
@@ -114,7 +114,7 @@ transition: all 0.3s ease-in-out;
 header .close{
     color: #878787; 
     font-size: 17px; 
-    background: #f3f513; 
+    background: #f3f3f3; 
     height: 33px; 
     width: 33px;
 cursor: pointer;
@@ -125,7 +125,7 @@ background: #ebedf9;
 .popup .content { 
     margin: 20px 0;
 }
-.popup icons{
+.popup .icons{
 margin: 15px 0 20px 0;
 }
 .content p{ 
@@ -141,7 +141,7 @@ border: 1px solid transparent;
 .icons a i{
 transition: transform 0.3s ease-in-out;
 }
-icons a:nth-child(1){ 
+.icons a:nth-child(1){ 
     color: #1877F2;
 border-color: #b7d4fb;
 }
@@ -153,7 +153,7 @@ border-color: #b7d4fb;
     border-color: #b6e7fc;
 }
 .icons a:nth-child(2):hover{
-background: #4601F6; 
+background: #46C1F6; 
 }
 .icons a:nth-child(3){
     color: #e1306c; 
@@ -163,11 +163,11 @@ background: #4601F6;
     background: #e1306c;
 }
 .icons a:nth-child(4) { 
-    color: #250366;
+    color: #25D366;
     border-color: #bef4d2;
     }
 .icons a:nth-child(4):hover { 
-    background: #250366;
+    background: #25D366;
     } 
 .icons a:nth-child(5){
     color: #0088cc;
