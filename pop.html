@@ -3,36 +3,38 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Popup Share Modal </title>
+<title>Popup Share Modal</title>
 <link rel="stylesheet" href="pop.css">
-<link rel="script" href="pop.js">
+<script src="pop.js" defer></script> 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/Line.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <button class="view-modal">Share</button>
-        <div class="popup">
-            <header>
+    <div class="popup">
+        <header>
             <span>Share Modal</span>
-                <div class="close"><i class="uil uil-times"></i></div>
-            </header>
-            <div class="content">
-                <p>Share this link via</p>
-                    <ul class="icons">
-                        <a href="#"><i class="fab fa-facebook-f"><1></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-whatsapp"></i></a>
-                        <a href="#"><i class="fab fa-telegran-plane"></i></a>
-                    </ul>
-<p>Or copy link</p>
-<div class="field">
-<i class="url-icon uil uil-Link"></i>
-<input type="text" readonly values="https://codepen.io/coding_dev_">
-<button>Copy</button>
-</div>
+            <div class="close">
+                <i class="fa-solid fa-xmark"></i> 
+            </div>
+        </header>
+        <div class="content">
+            <p>Share this link via</p>
+            <ul class="icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fab fa-telegram-plane"></i></a>
+            </ul>
+            <p>Or copy link</p>
+            <div class="field">
+                <i class="url-icon uil uil-link"></i>
+                <input type="text" readonly value="https://codepen.io/coding_dev_">
+                <button>Copy</button>
             </div>
         </div>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
-    </body>
+    </div>
+</body>
 </html>
