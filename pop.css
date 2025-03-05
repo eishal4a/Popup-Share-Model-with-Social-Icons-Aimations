@@ -1,11 +1,11 @@
 *{
-    margin: 8;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 .body{
-    background: #9145f8;
+    background: #9143f8;
 }
 ::selection{
     color: #fff;
@@ -21,7 +21,7 @@
     font-weight: 500;
     border-radius: 4px;
     border: 2px solid transparent;
-    transition: background 0.1s linear,border-color 0.1s linear, color 8.1s linear;
+    transition: background 0.1s linear,border-color 0.1s linear, color 0.1s linear;
 }
 .view-modal{
     top: 10%;
@@ -30,22 +30,23 @@
     font-weight: bold;
     font-size: 18px;
     padding: 10px 25px;
-    background: rgb(115, 5, 156);
+    background: rgb(113, 5, 156);
     transform: translate(-50%,-50%);
 }
 .popup{
-background: zgb(255, 254, 254);
+background: rgb(255, 254, 254);
 padding: 25px;
-border-radius: 15px; top: 10%;
-max-width: 386px;
+border-radius: 15px; 
+top: 10%;
+max-width: 380px;
 width: 100%;
 opacity:0;
 pointer-events: none;
-box-shadow: 8px 10px 15px rgba(0,0,0,0.1); 
+box-shadow: 0px 10px 15px rgba(0,0,0,0.1); 
 transform: translate(-50%, -50%) scale(1.2);
-transition: top 0s 0.2s ease-in-out;
-opacity: 0.2s 0s ease-in-out;
-transform: 0.2s 0s ease-in-out;
+transition: top 0s 0.2s ease-in-out,
+opacity 0.2s 0s ease-in-out,
+transform 0.2s 0s ease-in-out;
 }
 .popup.show{
 top: 50%;
@@ -53,24 +54,24 @@ left: 50%;
 opacity: 1;
 pointer-events: auto;
 transform: translate(-50%, 50%) scale(1); 
-transition: top 0s 0s ease-in-out;
-opacity: 0.25s 0s ease-in-out;
-transform: 0.2s 0s ease-in-out;
+transition: top 0s 0s ease-in-out,
+opacity 0.25s 0s ease-in-out,
+transform 0.2s 0s ease-in-out;
 }
-.popup :is(header, icons, field) {
+.popup :is(header, .icons, .field) {
 display: flex;
 align-items: center;
 justify-content: space-between;
 }
 .popup header{
 padding-bottom: 15px;
-border-bottom: 1px solid #ebed19;
+border-bottom: 1px solid #ebebf9;
 }
 .header span{
 font-size: 21px;
 font-weight: 600;
 }
-.header .close .icons a{
+.header .close, .icons a{
 display: flex;
 align-items: center;
 border-radius: 50%;
